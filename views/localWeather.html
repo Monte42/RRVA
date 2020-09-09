@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+    <title>Roxbury Run Village</title>
+    <link href="https://fonts.googleapis.com/css?family=Amiri|Calistoga|Ibarra+Real+Nova&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/weather.css">
+  </head>
+  <body>
+    <header id='head'>
+      <h1 id="title">Roxbury Run Village</h1>
+    </header>
+
+    <nav id='nav'>
+      <!-- Main Start-->
+      <label for="drop" class="toggle">Menu</label>
+      <input type="checkbox" id="drop" />
+      <ul class="menu">
+        <li><a class="test" href="../index.html">Home</a></li>
+        <li><a class="test" href="about.html">About Us</a></li>
+        <li><a class="test" href="amenities.html">Amenities</a></li>
+        <li><a class="test" href="gallery.html">Gallery</a></li>
+        <li><a class="test" href="localAttractions.html">Local Attractions</a></li>
+        <li><a class="test" href="#">Local Weather</a></li>
+        <li><a class="test" href="location.html">Location</a></li>
+        <li>
+            <!-- Information Start-->
+            <label for="drop-1" class="toggle">Information +</label>
+            <a href="#">Information</a>
+            <input type="checkbox" id="drop-1"/>
+            <ul>
+                <li><a class="test" href="login/keyContacts.html">Key Contacts</a></li>
+                <li><a class="test" href="trails.html">Private Trails</a></li>
+                <li><a class="test" href="camera.html">Live Camera</a></li>
+                <li>
+                  <!-- FOR HOMEOWNERS Start-->
+                  <label for="drop-2" class="toggle">For Homeowners +</label>
+                  <a href="#">For Homeowners</a>
+                  <input type="checkbox" id="drop-2"/>
+                  <ul>
+                    <li><a class="test" href="../newsUpdates/byLaws.html">Governing Docs</a></li>
+                    <li><a href="arch.html">Architectural Docs</a></li>
+                    <li><a class="test" href="login/letters.html">Letters</a></li>
+                    <li>
+                      <!-- FORMS Start-->
+                      <label for="drop-3" class="toggle">Forms +</label>
+                      <a href="#">Forms</a>
+                      <input type="checkbox" id="drop-3"/>
+                      <ul>
+                        <li><a href="login/registration.html">Registration Form</a></li>
+                        <li><a href="login/exteriorMod.html">Modify Exterior App</a></li>
+                        <li><a href="login/winterWatch.html">Winter Watch App</a></li>
+                        <li><a href="login/tenant.html">Tenant Information</a></li>
+                        <li><a href="login/guestInfo.html">Guest Information</a></li>
+                        <li><a href="login/parkingApp.html">Parking Sticker App</a></li>
+                      </ul>
+                      <!-- FORMS End -->
+                    </li>
+
+                  </ul>
+                  <!-- FOR HOMEOWNERS End-->
+                </li>
+
+            </ul>
+            <!-- Information End-->
+        </li>
+
+      </ul>
+      <!-- main End-->
+
+    </nav>
+
+    <div class="sidebar">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="amenities.html">Amenities</a></li>
+      <li><a href="trails.html">Private Trails</a></li>
+      <li><a href="localAttractions.html">Local Attractions</a></li>
+      <li><a href="#">Local Weather</a></li>
+      <li><a href="camera.html">Live Camera</a></li>
+      <li><a href="location.html">Location</a></li>
+      <li><a href="login/keyContacts.html">Key Contacts</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><span>Documents</span>
+        <ul class="submenu">
+          <li><a href="../newsUpdates/byLaws.html">Governing Docs</a></li>
+          <li><a href="arch.html">Architectural Docs</a></li>
+          <li><a href="login/letters.html">Letters</a></li>
+        </ul>
+      </li>
+      <li><span>Forms</span>
+        <ul class="submenu">
+          <li><a href="login/registration.html">Registration Form</a></li>
+          <li><a href="login/exteriorMod.html">Modify Exterior App</a></li>
+          <li><a href="login/winterWatch.html">Winter Watch App</a></li>
+          <li><a href="login/tenant.html">Tenant Information</a></li>
+          <li><a href="login/guestInfo.html">Guest Information</a></li>
+          <li><a href="login/parkingApp.html">Parking Sticker App</a></li>
+        </ul>
+      </li>
+    </div>
+
+      <div class="content">
+
+        <div class="currentWeather">
+          <div class="weather">
+            <div>
+              <h4>Roxbury Current Weather</h4>
+              <p><span id="temp" >44</span> | <span id="desc" >bad</span></p>
+              <p>Wind Speed: <span id="windSpeed" >fast</span></p>
+              <p>Wind Direction: <span id="windDirection" >sws</span></p>
+              <p>Sun Rise: <span id="sunRise" >7:30</span></p>
+              <p>Sun Set: <span id="sunSet" >7:40</span></p>
+            </div>
+            <img id="currentImage" src="../weather/01d.png" alt="">
+          </div>
+        </div>
+
+        <div class="forecast">
+          <h3>The Next Five Days</h3>
+          <div class="day">
+            <p><span id="date1">0/0/0</span></p>
+            <img id="image1" src="../weather/01n.png" alt="">
+            <p id="desc1">Really Bad</p>
+            <p>High: <span id="high1">0</span> | Low: <span id="low1">0</span></p>
+          </div>
+
+          <div class="day">
+            <p><span id="date2">0/0/0</span></p>
+            <img id="image2" src="../weather/01n.png" alt="">
+            <p id="desc2">Really Bad</p>
+            <p>High: <span id="high2">0</span> | Low: <span id="low2">0</span></p>
+          </div>
+
+          <div class="day">
+            <p><span id="date3">0/0/0</span></p>
+            <img id="image3" src="../weather/01n.png" alt="">
+            <p id="desc3">Really Bad</p>
+            <p>High: <span id="high3">0</span> | Low: <span id="low3">0</span></p>
+          </div>
+
+          <div class="day">
+            <p><span id="date4">0/0/0</span></p>
+            <img id="image4" src="../weather/01n.png" alt="">
+            <p id="desc4">Really Bad</p>
+            <p>High: <span id="high4">0</span> | Low: <span id="low4">0</span></p>
+          </div>
+
+          <div class="day">
+            <p><span id="date5">0/0/0</span></p>
+            <img id="image5" src="../weather/01n.png" alt="">
+            <p id="desc5">Really Bad</p>
+            <p>High: <span id="high5">0</span> | Low: <span id="low5">0</span></p>
+          </div>
+
+
+      </div>
+
+      <footer id="footer">
+        <div class="contact-us">
+          <p>Contact Us</p>
+          <hr>
+          <p>P.O. Box 115 Denver</p>
+          <p>Ny 12421</p>
+          <p>(607) 326-7677</p>
+        </div>
+        <div class="contact-me">
+          <a href="http://legend-gary.com/">
+            <div class="logo"></div>
+            <div class="my-link">
+              <p>Website By</p>
+              <p>Legend Gary Developments</p>
+            </div>
+          </a>
+        </div>
+      </footer>
+
+    </div>
+
+
+    <script src="../js/jquery.js"></script>
+    <script src="../js/sidebarSet.js"></script>
+    <script src="../js/weather.js"></script>
+  </body>
+</html>

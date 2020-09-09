@@ -1,0 +1,110 @@
+body{
+  background-attachment:fixed;
+  background-image: url(../images/background2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: scroll;
+  z-index: 0;
+}
+#head{
+  font-family: 'Calistoga', cursive;
+  background: none;
+  font-size: 1.3em;
+  text-shadow: 5px 5px 15px black;
+  color: #eef;
+}
+
+.image{
+  height: 35vh;
+}
+
+.container{
+  padding: 4% 2% 4% 2%;
+}
+
+.inner-container{
+  width:40%;
+  background: rgba(247, 243, 227, .9);
+  text-align: center;
+  font-size: 1.1em;
+  font-family: 'Amiri', serif;
+  opacity: .8;
+}
+
+.inner-container p{
+  font-family: 'Ibarra Real Nova', serif;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.trails .inner-container, .tennis .inner-container,
+.lawn .inner-container, .exterior .inner-container{
+  float: left;
+}
+
+
+.pool .inner-container, .dog .inner-container,
+.snow .inner-container, .garbage .inner-container{
+  float: right;
+}
+
+#footer{
+  width: 100vw;
+}
+
+@media screen and (max-width: 1220px) {
+  .inner-container{
+    font-size: 1.2em;
+    width: 55%;
+    padding: 1%;
+    border-radius: 4%;
+  }
+  .trails .inner-container, .pool .inner-container,
+  .tennis .inner-container, .dog .inner-container,
+  .lawn .inner-container, .exterior .inner-container,
+  .snow .inner-container, .garbage .inner-container{
+    float: none;
+    margin: 0 auto;
+  }
+  .image{
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .inner-container{
+    width: 80%;
+  }
+  .inner-container p {
+
+    font-weight: normal;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  h1{
+    font-size: 1.8em;
+  }
+  p{
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .content h1{
+    font-size: 1.3em;
+  }
+  .inner-container p{
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .content h1{
+    font-size: 1.1em;
+  }
+  .inner-container p{
+    font-size: .9em;
+  }
+}

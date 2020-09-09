@@ -1,0 +1,191 @@
+body, html{
+  margin: 0;
+  padding: 0;
+  background-color: #f7f3e3;
+}
+
+.whole{
+  padding: 0px;
+  margin: 0px;
+}
+
+.item{
+  padding: 0px;
+  margin: 0px;
+}
+
+nav{
+  height: 100%;
+  padding: 0px;
+}
+.side a:visited{
+  color: black
+}
+
+.side a:hover{
+  color: white;
+}
+.side a{
+  color: black;
+}
+
+.main{
+  background-image: url(../images/background1.jpg);
+  background-size: cover;
+  background-position: 25% 50%;
+  color: white;
+  margin-left: 0;
+}
+
+.weather-widget{
+  background-color: rgba(155, 155, 155, 0.5);
+  color: white;
+  width: auto;
+  text-align: right;
+}
+
+.side{
+  background-color: rgba(247, 243, 227, 0.75);
+  font-family: 'Amiri', serif;
+}
+.side .nav a:hover:not(.active), .side .nav span:hover:not(.active) {
+  background-color: #b8c5d6;
+}
+
+.intro{
+  text-shadow: 3px 3px black;
+  margin: 5% 20% 4% 20%;
+  max-width: 60%;
+  text-align: center;
+  font-family: 'Ibarra Real Nova', serif;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.intro p{
+  padding: 1%;
+  background-color: rgba(190, 190, 190, 0.25);
+}
+
+.slide {
+  margin: 0;
+  padding: 0;
+  width: 90%;
+  height: 450px;
+  position: absolute;
+  list-style: none;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 1;
+  animation: imageAnimation 50s linear infinite;
+}
+
+.more-pics{
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  border-radius: 25%;
+  position: absolute;
+  font-family: 'Ibarra Real Nova', serif;
+  font-size: 2em;
+  top: 20vh;
+  left: 30vw;
+  opacity: 0;
+  color: white;
+  transition: .5s;
+}
+
+footer{
+  padding-top: 10px;
+  padding-left: 12vw;
+}
+
+.slideshow li:nth-child(1) {
+  background-image: url(../images/entrance1.jpg)
+}
+.slideshow li:nth-child(2) {
+  background-image: url(../images/poolView2.jpg);
+  animation-delay: 10s;
+}
+.slideshow li:nth-child(3) {
+  background-image: url(../images/tennisBld.jpg);
+  animation-delay: 20s;
+}
+.slideshow li:nth-child(4) {
+  background-image: url(../images/playground2.jpg);
+  animation-delay: 30s;
+}
+.slideshow li:nth-child(5) {
+  background-image: url(../images/tennisCourt3.jpg);
+  animation-delay: 40s;
+}
+
+@keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 1
+  }
+  30% {
+    opacity: 0
+  }
+}
+
+#pictures:hover .more-pics{
+  opacity: 1;
+}
+
+#gallery-button{
+  width: 50%;
+  display: none;
+  color: white;
+  margin: 0 auto;
+  padding: 1%;
+  background-color: gray;
+  border-radius: 10%;
+  text-decoration: none;
+  transition: .5s;
+}
+
+#gallery-button:hover{background-color: lightgray;}
+#gallery-button:visited {color:white;}
+
+
+
+@media all and (max-width: 991px) {
+  .home-content{
+    padding: 0;
+  }
+  .toggle{display: block;}
+  #gallery-button{display: block;}
+  .more-pics{display: none;}
+  body{
+    background-color: #f7f3e3;
+    max-width: 100vw;
+  }
+  .slide{
+    width: 85%;
+    height: 350px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .slide{
+    width: 80%;
+    height: 250px;
+  }
+  body *{
+    font-size: .95em;
+  }
+
+  .intro p {
+    background-color: rgba(150, 150, 150, 0.5);
+  }
+}

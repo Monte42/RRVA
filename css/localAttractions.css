@@ -1,0 +1,88 @@
+body{
+  background-attachment:fixed;
+  background-image: url(../images/background2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: scroll;
+  z-index: 0;
+}
+#head{
+  font-family: 'Calistoga', cursive;
+  background: none;
+  font-size: 1.3em;
+  text-shadow: 5px 5px 15px black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.content h2{
+  font-family: 'Calistoga', cursive;
+  margin-left: 20%;
+  color: #e6ebfc;
+  font-size: 1.9em;
+  text-shadow: 5px 5px 10px black;
+}
+
+.item{
+  font-family: 'Ibarra Real Nova', serif;
+  text-align: right;
+  color: #e6ebfc;
+  text-shadow: 5px 5px 5px black;
+  font-size: 1.4em;
+  width: auto;
+  margin-left: 50%;
+}
+
+.item p{
+  background: rgba(247, 243, 227, .75);
+  margin: 0;
+  padding: 2%;
+  color: black;
+  text-shadow: none;
+}
+
+.item a {
+  color: black;
+  background: rgba(247, 243, 227, .75);
+  margin-top: 30%;
+  padding: 0% 2% 0% 2%;
+  text-shadow: none;
+}
+
+.item a:hover, .item a:visited:hover{color: blue;}
+
+.item a:visited{color: darkblue;}
+
+.inner{
+  height: 0;
+  transform: scale(0);
+  transform-origin: 50% 0px;
+  transition: all 1s linear;
+}
+
+.in-eat.expand,.in-distillery.expand,.in-golf.expand,.in-ski.expand,
+.in-activity.expand,.in-art.expand,.in-more.expand{
+  height: auto;
+  transform: scale(1);
+}
+
+#footer{
+  width: 100vw;
+}
+
+@media all and (max-width : 900px) {
+  .content h2{font-size: 1.5em;}
+  .item{font-size: 1.1em;}
+}
+
+@media all and (max-width : 768px) {
+  .content h2{padding-right: 10%;}
+  .content{text-align: center;}
+  .item{
+    margin: auto;
+    width: auto;
+  }
+  #footer{padding-left: 0vw}
+}

@@ -1,0 +1,58 @@
+#head{
+  font-family: 'Calistoga', cursive;
+  background: none;
+  font-size: 1.3em;
+  text-shadow: 5px 5px 15px black;
+  color: #eef;
+  padding-top: 5px;
+  background-color: rgba(247, 243, 227, 0.75);
+}
+
+.content{font-family: 'Ibarra Real Nova', serif;}
+
+*{border: none;}
+
+*:focus{outline: none;}
+
+input{border-bottom: 1px solid black;}
+
+textarea{
+  margin: 0 auto;
+  width: 70vw;
+  height: 20vh;
+  border: 1px solid black;
+}
+
+.container{
+  margin: 0% auto;
+  width:70vw;
+  font-size: 1.2em;
+}
+
+.form hr {
+  width: 60vw;
+  overflow: visible;
+  height: 30px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+}
+hr:before {
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: black;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
+
+span{display: inline-block;}
+
+.inner-security{
+  text-align: left;
+}
+
+#footer hr{color: black;}

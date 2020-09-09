@@ -1,0 +1,118 @@
+body{
+  background-attachment:fixed;
+  background-image: url(../images/background2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: scroll;
+  z-index: 0;
+}
+#head{
+  font-family: 'Calistoga', cursive;
+  background: none;
+  font-size: 1.3em;
+  text-shadow: 5px 5px 15px black;
+  color: #eef;
+}
+
+#map {
+  margin: auto;
+  height: 55vh;
+  width: 60vw;
+  position: relative;
+  z-index: -1;
+ }
+
+.content{font-family: 'Ibarra Real Nova', serif;}
+.content h3{font-size: 1.6em;}
+
+.info-container{
+  margin: 4% 0% 4% 0%;
+  font-size: 1.1em;
+  display: inline-block;
+}
+
+.container{
+  background: rgba(247, 243, 227, .8);
+  float: left;
+}
+
+.container span{font-weight: 900;}
+.drive{width: 20vw;}
+.notes{width: 40vw;}
+
+.btn-container{
+  height: 7vh;
+}
+
+.gps-btn{
+  padding: 1%;
+  font-family: 'Calistoga', cursive;
+  font-size: 1.2em;
+  border-radius: 10%;
+  border-bottom: 5px solid black;
+  border-right: 5px solid black;
+  position: relative;
+  top: 0px;
+}
+.gps-btn:hover{
+  top:2px;
+  border-bottom: 3px solid black;
+  border-right: 3px solid black;
+}
+.gps-btn:active{
+  top:4px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+#footer{
+  width: 99.5vw;
+}
+
+#nav label, #nav a{
+  background-color: #f7f3e3;
+  color: black;
+}
+
+@media screen and (max-width: 1100px) {
+  .info-container{font-size: 1em;}
+  .gps-btn{font-size: 1em;}
+}
+
+@media screen and (max-width: 768px) {
+  #footer{width: 100vw;}
+  #map{
+    width: 90vw;
+    margin-left: 4%;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .info-container{margin: 5% 15% 5% 15%;}
+  .container span{font-weight: 700;}
+  .drive{width: 70vw;}
+  .notes{width: 70vw;}
+}
+
+@media screen and (max-width: 500px) {
+  .info-container{font-size: .9em;}
+  #map{height: 45vh;}
+  .gps-btn{font-size: .9em;}
+}
+
+@media screen and (max-width: 400px) {
+  #map{
+    margin-left: 3.7%;
+    height: 40vh;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .info-container{font-size: .7em;}
+  #map{height: 35vh;}
+  .gps-btn{font-size: .7em;}
+}
+
+@media screen and (max-height: 500px) {
+  .btn-container{height: 10vh;}
+}

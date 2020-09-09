@@ -1,0 +1,63 @@
+body{
+  background-attachment:fixed;
+  background-image: url(../images/background2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: scroll;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+}
+#head{
+  font-family: 'Calistoga', cursive;
+  background: none;
+  font-size: 1.3em;
+  color: #eef;
+  text-shadow: 5px 5px 15px black;
+}
+
+.intro{
+  width: 75%;
+  background: rgba(247, 243, 227, .75);
+  margin-left: 12%;
+}
+
+h2{
+  font-family: 'Calistoga', cursive;
+  background: none;
+  font-size: 1.4em;
+  color: #eef;
+  text-shadow: 5px 5px 15px black;
+}
+
+img{
+  width: 50vw;
+}
+
+
+@media screen and (max-width: 950px) {
+  .sidebar *{font-size: .9em;}
+  #footer{padding-left: 25vw}
+  #head{font-size: 1em;}
+  .intro{font-size: .8em;}
+  h2{font-size: 1.3em;}
+}
+
+@media all and (max-width : 768px) {
+  img{
+    width: 80vw;
+  }
+  #footer{padding-left: 0vw}
+}
+
+@media all and (max-width : 575px) {
+  #head{font-size: .9em;}
+  .intro{font-size: .7em;}
+  h2{font-size: 1em;}
+}
+
+@media all and (max-width : 450px) {
+  #head{font-size: .8em;}
+  .intro{font-size: .6em;}
+  h2{font-size: .9em;}
+}

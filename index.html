@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Roxbury Run Village</title>
+    <link href="https://fonts.googleapis.com/css?family=Amiri|Calistoga|Ibarra+Real+Nova&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/home.css">
+    <script src="https://kit.fontawesome.com/aea6695a49.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <nav id='nav'>
+      <!-- Main Start-->
+      <label for="drop" class="toggle">Menu <i class="fas fa-bars"></i></label>
+      <input type="checkbox" id="drop" />
+      <ul class="menu">
+        <li><a class="test" href="../index.html">Home</a></li>
+        <li><a class="test" href="#">About Us</a></li>
+        <li><a class="test" href="amenities.html">Amenities</a></li>
+        <li><a class="test" href="gallery.html">Gallery</a></li>
+        <li><a class="test" href="localAttractions.html">Local Attractions</a></li>
+        <!-- <li><a class="test" href="localWeather.html">Local Weather</a></li> -->
+        <li><a class="test" href="location.html">Location</a></li>
+        <li>
+            <!-- Information Start-->
+            <label for="drop-1" class="toggle">Information <i class="fas fa-caret-down"></i></label>
+            <a class="label" href="#">Information</a>
+            <input type="checkbox" id="drop-1"/>
+            <ul>
+                <li><a class="test" href="login/keyContacts.html">Key Contacts</a></li>
+                <li><a class="test" href="trails.html">Private Trails</a></li>
+                <li><a class="test" href="camera.html">Live Camera</a></li>
+                <li>
+                  <!-- FOR HOMEOWNERS Start-->
+                  <label for="drop-2" class="toggle">For Homeowners <i class="fas fa-caret-down"></i></label>
+                  <a class="label" href="#">For Homeowners</a>
+                  <input type="checkbox" id="drop-2"/>
+                  <ul>
+                    <li><a class="test" href="../newsUpdates/byLaws.html">By Laws</a></li>
+                    <li><a class="test" href="login/letters.html">Letters</a></li>
+                    <li>
+                      <!-- FORMS Start-->
+                      <label for="drop-3" class="toggle">Forms <i class="fas fa-caret-down"></i></label>
+                      <a class="label" href="#">Forms</a>
+                      <input type="checkbox" id="drop-3"/>
+                      <ul>
+                        <li class="test"><a href="login/exteriorMod.html">Modify Exterior App</a></li>
+                        <li class="test"><a href="login/winterWatch.html">Winter Watch App</a></li>
+                        <li class="test"><a href="login/tenant.html">Tenant Information</a></li>
+                        <li class="test"><a href="login/guestInfo.html">Guest Information</a></li>
+                        <li class="test"><a href="login/parkingApp.html">Parking Sticker App</a></li>
+                      </ul>
+                      <!-- FORMS End -->
+                    </li>
+
+                  </ul>
+                  <!-- FOR HOMEOWNERS End-->
+                </li>
+
+            </ul>
+            <!-- Information End-->
+        </li>
+
+      </ul>
+      <!-- main End-->
+
+    </nav>
+
+    <div class="whole">
+      <div class="row">
+        <div class="item col-2 side">
+          <nav style="background: #f7f3e3;" class="nav flex-column">
+            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="./views/about.html">About</a>
+            <a class="nav-link" href="./views/amenities.html">Amenities</a>
+            <a class="nav-link" href="./views/trails.html">Private Trails</a>
+            <a class="nav-link" href="./views/localAttractions.html">Local Attractions</a>
+            <!-- <a class="nav-link" href="./views/localWeather.html">Local Weather</a> -->
+            <a class="nav-link" href="./views/camera.html">Live Camera</a>
+            <a class="nav-link" href="./views/location.html">Location</a>
+            <a class="nav-link" href="./views/login/keyContacts.html">Key Contacts</a>
+            <a class="nav-link" href="./views/gallery.html">Gallery</a>
+            <a class="nav-link" href="./views/login/byLaws.html">Governing Docs</a>
+            <a class="nav-link" href="./views/login/arch.html">Architectural Docs</a>
+            <a class="nav-link" href="./views/login/letters.html">Letters</a>
+            <a class="nav-link" href="./views/login/registration.html">Registration Form</a>
+            <a class="nav-link" href="./views/login/exteriorMod.html">Modify Exterior App</a>
+            <a class="nav-link" href="./views/login/winterWatch.html">Winter Watch App</a>
+            <a class="nav-link" href="./views/login/tenant.html">Tenant Information</a>
+            <a class="nav-link" href="./views/login/guestInfo.html">Guest Information</a>
+            <a class="nav-link" href="./views/login/parkingApp.html">Parking Sticker App</a>
+            <a href="./views/covid-19.html">Coronavirus Info</a>
+          </nav>
+        </div>
+
+
+        <div class="item col-lg-10 main">
+          <div class="weather-widget">
+              <div class="currentWeather">
+                <div class="weather">
+                  <marquee behavior="scroll" direction="left">
+                    <img height="25px" id="currentImage" src="./weather/01d.png" alt="umm..">
+                    Current Weather: <span id="desc" >bad</span> | <span id="temp" >44</span>
+                    &nbsp; &nbsp; &nbsp; Wind Speed: <span id="windSpeed">fast</span> MPH
+                    &nbsp; &nbsp; &nbsp; Wind Direction: <span id="windDirection">sws</span>
+                    &nbsp; &nbsp; &nbsp; Sun Rise: <span id="sunRise">7:30</span> ~
+                    Sun Set: <span id="sunSet">7:40</span>....
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    For updates and tips on how to prepare for yourself and your
+                    family for COVID-19, call the New York State Coronavirus Hotline at
+                    1-888-364-3065, or visit
+                    <a style="color:white;" href="https://coronavirus.health.ny.gov/home.">
+                      https://coronavirus.health.ny.gov/home.
+                    </a>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  </marquee>
+                </div>
+              </div>
+          </div>
+          <div class="home-content">
+            <div >
+              <header class="mt-4">
+                <video width="80%" autoplay muted>
+                  <source src="./videos/headMarkII.mp4"/>
+                  Your browser does not support the HTML5 video tag.  Use a better browser!
+                </video>
+              </header>
+              <div class="intro">
+                <h1>Welcome to Roxbury Run Village</h1>
+                <p>
+                  Hello and Welcome!  The Roxbury Run Village Association and its
+                  Homeowners, located in Delaware County would like to welcome you.
+                  Just a short drive from New York City, Roxbury Run Village is an
+                  ideal retreat, as a full time resident or as an owner of a country
+                  weekend home.  The Village offers low maintenance, as our maintenance
+                  staff will help maintain the exterior of the homes.  Lawncare, garbage
+                  pick-up and snow removal are all taken care of for you.  So if you
+                  thinking about a country home in the Catskills think of Roxbury Run.
+                </p>
+              </div>
+
+              <a id="gallery-button" href="./views/gallery.html">Click Here To View More Images</a>
+
+              <div class='my-auto'>
+                <a id='pictures' href="./views/gallery.html">
+                  <ul class="slideshow">
+                    <li class='slide'><span class="more-pics">View More</span></li>
+                    <li class='slide'><span class="more-pics">View More</span></li>
+                    <li class='slide'><span class="more-pics">View More</span></li>
+                    <li class='slide'><span class="more-pics">View More</span></li>
+                    <li class='slide'><span class="more-pics">View More</span></li>
+                  </ul>
+                </a>
+              </div>
+            </div>
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer id="footer">
+      <div class="contact-us">
+        <p>Contact Us</p>
+        <hr>
+        <p>P.O. Box 115 Denver</p>
+        <p>Ny 12421</p>
+        <p>(607) 326-7677</p>
+      </div>
+      <div class="contact-me">
+        <a href="http://legend-gary.com/">
+          <div class="logo"></div>
+          <div class="my-link">
+            <p>Website By</p>
+            <p>Legend Gary Developments</p>
+          </div>
+        </a>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <script src="./js/jquery.js"></script>
+    <script src="./js/weather.js"></script>
+  </body>
+</html>

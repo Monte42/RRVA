@@ -1,0 +1,53 @@
+#head{
+  font-family: 'Calistoga', cursive;
+  background: none;
+  font-size: 1.3em;
+  text-shadow: 5px 5px 15px black;
+  color: #eef;
+  padding-top: 5px;
+  background-color: rgba(247, 243, 227, 0.75);
+}
+
+.content h1{
+  font-size: 2.5em;
+  text-decoration: underline;
+}
+
+.content h1, .content h3{font-family: 'Calistoga', cursive; }
+
+.outer{
+  margin: 0% 4% 0 4%;
+  text-align: left;
+  font-size: 1.6em;
+}
+
+.inner{
+  font-size: .8em;
+  text-align: center;
+  height: 0;
+  transform: scale(0);
+  transform-origin: 50% 0px;
+  background-image: radial-gradient(#eee 40%, white 100%);
+  transition: all 1s linear;
+  font-family: 'Ibarra Real Nova', serif;
+}
+
+.in-box1.expand, .in-box2.expand, .in-box3.expand,
+.in-box4.expand, .in-box5.expand, .in-box6.expand{
+  height: auto;
+  transform: scale(1);
+  text-align: left;
+}
+
+.outer h3{
+  width: auto;
+  display: inline-block;
+}
+
+.outer h3:hover{
+  background-color: rgba(212, 212, 212, 0.5);
+}
+
+ul, ol, p{
+  text-align: left;
+}

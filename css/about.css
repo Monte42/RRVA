@@ -1,0 +1,43 @@
+body{
+  background-attachment:fixed;
+  background-image: url(../images/background2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: scroll;
+  z-index: 0;
+}
+
+#head{
+  font-family: 'Calistoga', cursive;
+  background: none;
+  font-size: 1.3em;
+  text-shadow: 5px 5px 15px black;
+  color: #eef;
+}
+
+.content-p{
+  font-family: 'Ibarra Real Nova', serif;
+  font-size: 1.5em;
+  padding: 5px;
+  background: rgba(247, 243, 227, .7);
+  text-indent: 20px;
+}
+
+.sidebar{
+  transform: translate(0%, -22.4%);
+}
+
+.para::first-letter {
+  font-size: 200%;
+  color: #8A2BE2;
+}
+
+.content img, .content video{
+  width: 100%;
+  padding: 10px 0px;
+}
+
+@media screen and (max-width: 768px) {
+  div.content{padding: 1vh 10vw 0vh;}
+  .content-p{font-size: 1em;}
+}

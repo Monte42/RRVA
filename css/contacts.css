@@ -1,0 +1,35 @@
+#head{
+  font-family: 'Calistoga', cursive;
+  background: none;
+  font-size: 1.3em;
+  text-shadow: 5px 5px 15px black;
+  color: #eef;
+  padding-top: 5px;
+  background-color: rgba(247, 243, 227, 0.75);
+}
+
+.content{font-family: 'Ibarra Real Nova', serif;}
+
+.contact-list hr {
+  width: 60vw;
+  overflow: visible;
+  height: 30px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+}
+.contact-list hr:before {
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: black;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
+
+table {
+  width: 100%;
+}
