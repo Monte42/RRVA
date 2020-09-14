@@ -131,8 +131,8 @@ function sendEmail($ppdf,$pname)
     // $mail->Password   = '#### #### ####';                               // SMTP password
     $mail->Host       = 'smtp.gmail.com';  // Specify main and backup SMTP servers
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-    $mail->Username   = 'rrvainc@gmail.com';                     // SMTP username
-    $mail->Password   = '%rr#va19';
+    $mail->Username   = '#';                     // SMTP username
+    $mail->Password   = '#';
     $mail->SMTPSecure = 'tls';                                  // Enable TLS encryption, `ssl` also accepted
     $mail->Port       = 587;                                    // TCP port to connect to
 
