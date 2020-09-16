@@ -115,33 +115,7 @@ function sendEmail($ppdf,$pname)
   $mail = new PHPMailer(true);
 
   try {
-    //Server settings
-    $mail->SMTPDebug = false;                                       // Enable verbose debug output
-    $mail->isSMTP();                                            // Set mailer to use SMTP
-    // $mail->Host       = 'mx.catskill.net.cust.b.hostedemail.com';  // Specify main and backup SMTP servers
-    // $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-    // $mail->Username   = 'rrvainc@catskill.net';                     // SMTP username
-    // $mail->Password   = '#### #### ####';                               // SMTP password
-    $mail->Host       = 'smtp.gmail.com';  // Specify main and backup SMTP servers
-    $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-    $mail->Username   = '#';                     // SMTP username
-    $mail->Password   = '#';
-    $mail->SMTPSecure = 'tls';                                  // Enable TLS encryption, `ssl` also accepted
-    $mail->Port       = 587;                                    // TCP port to connect to
-
-    //Recipients
-    $mail->setFrom('rrva@website.com', 'Guest User');
-    $mail->addAddress('rrvainc@gmail.com', 'Ms. Neif');     // Add a recipient
-
-      // Attachments
-      $mail->addStringAttachment($ppdf, $pname.'Tenant.pdf');
-
-
-      // Content
-      $mail->isHTML(true);                                  // Set email format to HTML
-      $mail->Subject = 'Rent Form From '.$pname;
-      $mail->Body    = 'Hi Wendy my name is '.$pname.', and I would like to rent out my unit.';
-      $mail->AltBody = 'Hi Wendy my name is '.$pname.', and I would like to rent out my unit.';
+    ####
 
       $mail->send();
       header('Location:thanks.php?name='.$pname);

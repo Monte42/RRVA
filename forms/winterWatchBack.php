@@ -177,40 +177,7 @@ function sendEmail($ppdf,$pname)
   $mail = new PHPMailer(true);
 
   try {
-    //Server settings
-    $mail->SMTPDebug = false;                                       // Enable verbose debug output
-    $mail->isSMTP();                                            // Set mailer to use SMTP
-    // $mail->Host       = 'mx.catskill.net.cust.b.hostedemail.com';  // Specify main and backup SMTP servers
-    // $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-    // $mail->Username   = 'rrvainc@catskill.net';                     // SMTP username
-    // $mail->Password   = '#### #### ####';                               // SMTP password
-    $mail->Host       = 'smtp.gmail.com';  // Specify main and backup SMTP servers
-    $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-    $mail->Username   = '#';                     // SMTP username
-    $mail->Password   = '#';
-    $mail->SMTPSecure = 'tls';                                  // Enable TLS encryption, `ssl` also accepted
-    $mail->Port       = 587;                                    // TCP port to connect to
-
-    //Recipients
-    $mail->setFrom('rrva@website.com', 'Guest User');
-    $mail->addAddress('rrvainc@gmail.com', 'Ms. Neif');     // Add a recipient
-
-      // Attachments
-      $mail->addStringAttachment($ppdf, $pname.' Winter Watch.pdf');
-
-
-      // Content
-      $mail->isHTML(true);                                  // Set email format to HTML
-      $mail->Subject = 'Winter Watch Form from '.$pname;
-      $mail->Body    = 'Hi Wendy my name is '.$pname.', and I would like to be on house watch.
-      I will be mailing the check the soon, and understand that house watch will NOT start untill
-      the check is received by the office.';
-
-      $mail->AltBody = 'Hi Wendy my name is '.$pname.', and I would like to be on house watch.
-      I will be mailing the check the soon, and understand that house watch will NOT start untill
-      the check is received by the office.';
-
-      $mail->send();
+    ####
       header('Location:thanks.php?name='.$pname);
   } catch (Exception $e) {
       echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";

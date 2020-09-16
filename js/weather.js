@@ -1,7 +1,7 @@
 $(function() {
     var zip = '12474'
     var city = 'Roxbury,us'
-    var key = '#'
+    var key = 'fc5458d1cb9e84de3545adcfde1355fe'
     $.ajax({
         url: 'https://api.openweathermap.org/data/2.5/weather',
         dataType: 'json',
