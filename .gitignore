@@ -1,6 +1,12 @@
 images/
 videos/
 weather/
+login/
+billing/
+vendor/
+proposal/
+fpdf/
+files/
 *.mp4
 *.png
 *.jpg

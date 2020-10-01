@@ -122,8 +122,7 @@ function sendEmail($ppdf,$pname)
   $mail = new PHPMailer(true);
 
   try {
-    ####
-
+    
       $mail->send();
       header('Location:thanks.php?name='.$pname);
   } catch (Exception $e) {

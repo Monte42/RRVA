@@ -250,8 +250,7 @@ function sendEmail($ppdf,$pname)
 
   try {
       //Server settings
-      ####
-
+      
       $mail->send();
       header('Location:thanks.php?name='.$pname);
   } catch (Exception $e) {
